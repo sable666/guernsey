@@ -72,10 +72,11 @@
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var map = L.map('map', {
-            center: [42.26617, -104.7445],
-            zoom: 15
-        });
+        vavar map = L.map('map', {
+    center: [42.26617, -104.7465], // shifted slightly west (made longitude more negative)
+    zoom: 14 
+});
+
 
         var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; OpenStreetMap contributors &copy; CartoDB',
