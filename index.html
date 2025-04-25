@@ -77,12 +77,13 @@
             zoom: 15
         });
 
-        var StamenTonerLite = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', {
-    attribution: 'Map tiles by Stamen Design, CC BY 3.0 — Map data © OpenStreetMap contributors',
+        var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap contributors &copy; CartoDB',
     subdomains: 'abcd',
-    minZoom: 0,
-    maxZoom: 20
+    maxZoom: 19
 }).addTo(map);
+
+
 
 
         // Red highlight circle under Guernsey Beach
